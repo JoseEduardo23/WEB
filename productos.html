@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tienda Electrónica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="inicio.html" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn btn-primary">Registro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lista de Productos usando Flexbox -->
+    <div class="container mt-5">
+        <h2 class="text-center">Productos Destacados</h2>
+        <div class="row d-flex flex-wrap">
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/xiaomi-redmi-13c-gris-doble-movistar_2_1.png" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <p class="card-text">Xiaomi Redmi 13C</p>
+                        <p class="card-text"><strong>$170.00</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/xiaomi-12-lite-negro-doble.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <p class="card-text">Xiaomi 12 Lite</p>
+                        <p class="card-text"><strong>$390.00</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/xiaomi-redmi-10a-silver-doble-movistar_j8in37qcaoym5cff.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <p class="card-text">Xiaomi Redmi 10A</p>
+                        <p class="card-text"><strong>$164.29</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Más Productos</h2>
+        <div class="row d-flex flex-wrap">
+            <!-- Producto 4 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/iphone-15-negro-accesorio-movistar.png" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <p class="card-text">iPhone 15</p>
+                        <p class="card-text"><strong>$1,180.00</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/apple-cable-lightning-usb-c-2m-doble-movistar_1.png" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <p class="card-text">Apple cable lightning USB</p>
+                        <p class="card-text"><strong>$25.66</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/apple-airpods-max-azul-doble_1.png" class="card-img-top" alt="Producto 6">
+                    <div class="card-body">
+                        <p class="card-text">Apple Airpods Max</p>
+                        <p class="card-text"><strong>$620.00</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Otros Productos</h2>
+        <div class="row d-flex flex-wrap">
+            <!-- Producto 7 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/samsung-s23-ultra-negro-doble-movistar_wdyuabv5qp4gxev1.png" class="card-img-top" alt="Producto 7">
+                    <div class="card-body">
+                        <p class="card-text">Samsung Galaxy S23 Ultra</p>
+                        <p class="card-text"><strong>$1,204.44</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/samsung-a15-azul-doble.png" class="card-img-top" alt="Producto 8">
+                    <div class="card-body">
+                        <p class="card-text">Samsung Galaxy A15</p>
+                        <p class="card-text"><strong>$848.14</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-warning">PRODUCTO</button>
+                    <img src="Imagenes/samsung-a05-negro-doble_1.png" class="card-img-top" alt="Producto 9">
+                    <div class="card-body">
+                        <p class="card-text">Samsung Galaxy A05</p>
+                        <p class="card-text"><strong>$675.00</strong></p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para cada producto -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/xiaomi-redmi-13c-gris-doble-movistar_2_1.png" class="rounded mx-auto d-block" alt="Producto 1">
+                    <p>El Xiaomi Redmi 13C es un smartphone asequible con características sorprendentes. Cuenta con una pantalla amplia para una experiencia visual inmersiva, una cámara versátil para capturar momentos claros y nítidos, y una batería de larga duración que te acompaña durante todo el día.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel2">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/xiaomi-12-lite-negro-doble.png" class="rounded mx-auto d-block" alt="Producto 2">
+                    <p>El Xiaomi 12 Lite es un smartphone de gama media que destaca por su diseño elegante y pantalla AMOLED de alta resolución. Equipado con un potente procesador y un sistema de cámaras avanzado, ofrece un rendimiento fluido y fotos de calidad superior en cualquier condición de luz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel3">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/xiaomi-redmi-10a-silver-doble-movistar_j8in37qcaoym5cff.png" class="rounded mx-auto d-block" alt="Producto 3">
+                    <p>El Xiaomi Redmi 10A es un smartphone accesible ideal para aquellos que buscan un dispositivo funcional sin comprometer el rendimiento. Tiene una pantalla grande, una batería robusta y un sistema de cámaras que captura fotos claras y detalladas, perfecto para el uso diario.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel4">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/iphone-15-negro-accesorio-movistar.png" class="rounded mx-auto d-block" alt="Producto 4">
+                    <p>El iPhone 15 cuenta con una pantalla OLED Super Retina XDR de 6.1 pulgadas y resolución de 2532 x 1170 píxeles, impulsado por el chip A16 Bionic. Su sistema de cámara dual de 12 MP incluye una principal y una ultra gran angular. Ofrece almacenamiento desde 128 GB hasta 512 GB y soporta conectividad 5G. Su diseño elegante, resistente al agua y al polvo con certificación IP68, está disponible en varios colores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel5">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/apple-cable-lightning-usb-c-2m-doble-movistar_1.png" class="rounded mx-auto d-block" alt="Producto 5">
+                    <p>El Apple Cable Lightning USB es ideal para dispositivos Apple, con un conector Lightning y USB estándar. Ofrece carga rápida y transferencia de datos eficiente, gracias a su construcción de alta calidad que garantiza durabilidad. Su longitud conveniente lo hace perfecto para uso en casa, oficina o viaje, manteniendo tus dispositivos Apple siempre listos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel6">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/apple-airpods-max-azul-doble_1.png" class="rounded mx-auto d-block" alt="Producto 6">
+                    <p>Los Apple AirPods Max son audífonos over-ear con sonido de alta fidelidad, cancelación activa de ruido y hasta 20 horas de reproducción. Su diseño combina acero inoxidable y malla para una durabilidad y comodidad excepcionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel7">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/samsung-s23-ultra-negro-doble-movistar_wdyuabv5qp4gxev1.png" class="rounded mx-auto d-block" alt="Producto 7">
+                    <p>El Samsung Galaxy S23 Ultra, con su procesador Snapdragon 8 Gen 2 y pantalla Dynamic AMOLED 2X de 6.8 pulgadas, ofrece un rendimiento superior y una visualización vibrante. Su cámara principal de 200 MP captura imágenes detalladas y nítidas, mientras que su batería de larga duración soporta carga rápida y inalámbrica.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel8">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/samsung-a15-azul-doble.png" class="rounded mx-auto d-block" alt="Producto 8">
+                    <p>El Samsung Galaxy A15 cuenta con una pantalla HD+ de 6.5 pulgadas, procesador octa-core, 4GB de RAM y 64GB de almacenamiento. Su sistema de cámaras incluye una principal de 50 MP y una frontal de 13 MP, y ofrece una batería de 5000 mAh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel9" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel9">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs
+
+-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Imagenes/samsung-a05-negro-doble_1.png" class="rounded mx-auto d-block" alt="Producto 9">
+                    <p>El Samsung Galaxy A05 destaca por su pantalla HD+ de 6.5 pulgadas y una batería duradera. Ofrece un rendimiento sólido con su procesador de gama media y es ideal para uso diario y entretenimiento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer class="bg-dark text-light mt-4">
+    <div class="container py-4">
+        <div class="row">
+            <!-- Enlaces adicionales -->
+            <div class="col-md-4">
+                <h5>Enlaces adicionales</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-link-45deg"></i> Enlace 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-link-45deg"></i> Enlace 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-link-45deg"></i> Enlace 3
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-link-45deg"></i> Enlace 4
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Información de contacto -->
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-envelope"></i> email@gmail.com
+                    </li>
+                    <li>
+                        <i class="bi bi-phone"></i> +593 999999999
+                    </li>
+                    <li>
+                        <i class="bi bi-geo-alt"></i> Ladron de Guevara, La Floresta
+                    </li>
+                </ul>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-md-4">
+                <h5>¡Síguenos en nuestras Redes Sociales!</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-twitter"></i> Twitter/X
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-whatsapp"></i> Whatsapp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

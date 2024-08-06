@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "nj2ml5veh1");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Electrónica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Justifica el texto */
+        .text-justify {
+            text-align: justify;
+        }
+        /* Aplica Flexbox a la barra de navegación */
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+        }
+        /* Añade margen a los elementos del menú de navegación */
+        .navbar-nav .nav-item {
+            margin-right: 1rem;
+        }
+        /* Aplica Flexbox al contenido del footer */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        /* Asegura que los elementos del footer se distribuyan equitativamente */
+        .footer-content > div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">Tienda Electrónica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Menú de navegación usando Flexbox -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <!-- Botones de sesión -->
+                <div class="d-flex">
+                    <a href="inicio.html" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn btn-primary">Registro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Destacados -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="400" src="Imagenes/Captura de pantalla 2024-06-18 214602.png" class="rounded mx-auto d-block" alt="Producto 1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img height="400" src="Imagenes/Captura de pantalla 2024-06-18 215509.png" class="rounded mx-auto d-block" alt="Producto 2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img height="400" src="Imagenes/BH-iphone_bancolombia.webp" class="rounded mx-auto d-block" alt="Producto 3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+        <div class="container py-4">
+            <div class="footer-content">
+                <!-- Enlaces adicionales -->
+                <div>
+                    <h5>Enlaces adicionales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i class="bi bi-link-45deg"></i>Enlace 1</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i class="bi bi-link-45deg"></i>Enlace 2</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i class="bi bi-link-45deg"></i>Enlace 3</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i class="bi bi-link-45deg"></i>Enlace 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Información de contacto -->
+                <div>
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-envelope"></i> email@gmail.com
+                        </li>
+                        <li>
+                            <i class="bi bi-phone"></i> +593 999999999
+                        </li>
+                        <li>
+                            <i class="bi bi-map"></i> Ladron de Guevara, La Floresta
+                        </li>
+                    </ul>
+                </div>
+                <!-- Redes sociales -->
+                <div>
+                    <h5>¡Siguenos en nuestras Redes Sociales!</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i class="bi bi-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i class="bi bi-twitter"></i> Twitter/X</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i class="bi bi-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="text-center">
+                <p>&copy; 2024 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

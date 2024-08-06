@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tienda Electrónica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="inicio.html" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn btn-primary">Registro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Lista de Ofertas usando Flexbox -->
+    <div class="container mt-5">
+        <h2 class="text-center">Ofertas Destacados</h2>
+        <div class="row d-flex flex-wrap">
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/nokia-g10-azul-doble_1_1_2.png" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <p class="card-text">Nokia G10 Seminuevo</p>
+                        <h4 class="card-text"><strong>$69.00</strong></h4>
+                        <h6 class="precio-antiguo">$200.00</h6>                        
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/honor-magic-6-pro-negro-accesorio.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <p class="card-text">Honor Magic 6 Pro</p>
+                        <h4 class="card-text"><strong>$1,240.00 </strong></h4>
+                        <h6 class="precio-antiguo">$1,500.00</h6>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/iphone-14-negro-accesorio-movistar_3.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <p class="card-text">iPhone 14 usado</p>
+                        <h4 class="card-text"><strong>$1,040.00</strong></h4>
+                        <h6 class="precio-antiguo">$1,200.00</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row d-flex flex-wrap">
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/honor-x8a-silver-doble.png" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <p class="card-text">Honor X8A</p>
+                        <h4 class="card-text"><strong>$276.21</strong></h4>
+                        <h6 class="precio-antiguo">$301.80</h6>
+
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/honor-magic-5-lite-verde-doble-movistar.png" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <p class="card-text">Honor Magic 5 Lite</p>
+                        <h4 class="card-text"><strong>$310.00</strong></h4>
+                        <h6 class="precio-antiguo">$460.00</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/nokia-g11-doble.png" class="card-img-top" alt="Producto 6">
+                    <div class="card-body">
+                        <p class="card-text">Nokia G10</p>
+                        <h4 class="card-text"><strong>$159.00</strong></h4>
+                        <h6 class="precio-antiguo">$200.00</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row d-flex flex-wrap">
+            <!-- Producto 7 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/samsung-galaxy-s24-titanio-accesorio-movistar_1.png" class="card-img-top" alt="Producto 7">
+                    <div class="card-body">
+                        <p class="card-text">Samsung S24 Ultra</p>
+                        <h4 class="card-text"><strong>$1,529.10 </strong></h4>
+                        <h6 class="precio-antiguo">$1,600.29</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes/iphone-11-128gb-negro-doble-movistar_nlcxwnwscpvufavx.png" class="card-img-top" alt="Producto 8">
+                    <div class="card-body">
+                        <p class="card-text">Iphone 11 Seminuevo</p>
+                        <h4 class="card-text"><strong>$610.08</strong></h4>
+                        <h6 class="precio-antiguo">$680.23</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card">
+                    <button type="button" class="btn btn-danger">EN OFERTA</button>
+                    <img src="Imagenes//honor-magic-5-lite-verde-doble-movistar.png" class="card-img-top" alt="Producto 9">
+                    <div class="card-body">
+                        <p class="card-text">Honor Magic 6 Lite</p>
+                        <h4 class="card-text"><strong>$385.00</strong></h4>
+                        <h6 class="precio-antiguo">$440.00</h6>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modales de Productos -->
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel1">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/nokia-g10-azul-doble_1_1_2.png" class="rounded mx-auto d-block"
+                            alt="Producto 1">
+                        <p>El Nokia G10 seminuevo ofrece una combinación perfecta de rendimiento y durabilidad. Con su batería de larga duración y sistema operativo intuitivo, es ideal para usuarios que buscan un dispositivo confiable para uso diario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel2">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/honor-magic-6-pro-negro-accesorio.png" class="rounded mx-auto d-block"
+                            alt="Producto 2">
+                        <p>El Honor Magic 6 Pro es un smartphone de alta gama con una pantalla curva de 6.7 pulgadas y tecnología avanzada de cámara. Su potente procesador y diseño elegante lo convierten en una opción premium para los entusiastas de la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel3">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/iphone-14-negro-accesorio-movistar_3.png"
+                            class="rounded mx-auto d-block" alt="Producto 3">
+                        <p>El iPhone 14 usado mantiene su reputación de calidad con una cámara impresionante y un rendimiento sólido. Con su diseño elegante y pantalla Super Retina, ofrece una experiencia de usuario excepcional a un precio accesible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel4">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/honor-x8a-silver-doble.png" class="rounded mx-auto d-block"
+                            alt="Producto 4">
+                        <p>El Honor X8A destaca por su pantalla de alta resolución y diseño delgado. Perfecto para la multitarea y el entretenimiento, este smartphone combina estilo y funcionalidad con un rendimiento eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel5">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/honor-magic-5-lite-verde-doble-movistar.png"
+                            class="rounded mx-auto d-block" alt="Producto 5">
+                        <p>El Honor Magic 5 Lite combina características avanzadas con un diseño moderno. Su sistema de cámara múltiple y batería optimizada hacen de este dispositivo una opción atractiva para los usuarios que buscan un equilibrio entre calidad y precio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel6">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/nokia-g11-doble.png" class="rounded mx-auto d-block"
+                            alt="Producto 6">
+                        <p>El Nokia G10 ofrece una experiencia confiable con su batería de larga duración y sistema operativo limpio. Ideal para aquellos que necesitan un dispositivo resistente y fácil de usar para las tareas diarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel7">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/samsung-galaxy-s24-titanio-accesorio-movistar_1.png"
+                            class="rounded mx-auto d-block" alt="Producto 7">
+                        <p>El Samsung S24 Ultra es una joya de la tecnología móvil con su pantalla Dynamic AMOLED y cámara de alta resolución. Con su potente procesador y características innovadoras, es perfecto para usuarios que buscan lo mejor en rendimiento y diseño.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel8">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes/iphone-11-128gb-negro-doble-movistar_nlcxwnwscpvufavx.png" class="rounded mx-auto d-block" alt="Producto 8">
+                        <p>El iPhone 11 seminuevo ofrece un rendimiento robusto con su chip A13 Bionic y sistema de cámara dual. Su diseño elegante y funcionalidad avanzada lo hacen ideal para quienes buscan una experiencia premium a un costo reducido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel9"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel9">Detalles del Producto</h5>
+                        <button type="button" class="btn-close" data-bs -dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Imagenes//honor-magic-5-lite-verde-doble-movistar.png" class="rounded mx-auto d-block"
+                            alt="Producto 9">
+                        <p>El Honor Magic 6 Lite es conocido por su pantalla nítida y rendimiento fluido. Con características que equilibran la eficiencia y la potencia, es una excelente opción para aquellos que buscan un dispositivo versátil y asequible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<!-- Footer -->
+<footer class="bg-dark text-light">
+    <div class="container py-4">
+        <div class="row">
+            <!-- Enlaces adicionales -->
+            <div class="col-md-4">
+                <h5>Enlaces adicionales</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i
+                                class="bi bi-link-45deg"></i>Enlace 1</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i
+                                class="bi bi-link-45deg"></i>Enlace 2</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i
+                                class="bi bi-link-45deg"></i>Enlace 3</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"> <i
+                                class="bi bi-link-45deg"></i>Enlace 4</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Información de contacto -->
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-envelope"></i> email@gmail.com
+                    </li>
+                    <li>
+                        <i class="bi bi-phone"></i> +593 999999999
+                    </li>
+                    <li>
+                        <i class="bi bi-map"></i> Ladron de Guevara, La Floresta
+                    </li>
+                </ul>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-md-4">
+                <h5>¡Siguenos en nuestras Redes Sociales!</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i
+                                class="bi bi-facebook"></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i
+                                class="bi bi-twitter"></i> Twitter/X</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i
+                                class="bi bi-instagram"></i> Instagram</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: inherit;" href="#" class="text-light"><i
+                                class="bi bi-whatsapp"></i> Whatsapp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
